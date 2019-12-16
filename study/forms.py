@@ -8,10 +8,13 @@ class VehicleForm(forms.Form):
     model = forms.CharField()
     year = forms.IntegerField()
 
+
+
 class VehicleView(FormView):
     form_class = VehicleForm
     template_name = 'input.html'
     success_url = reverse_lazy('success')    
+
 
 class NameForm(forms.Form):
     your_name = forms.CharField(label='Your name', max_length=100)
