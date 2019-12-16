@@ -8,7 +8,7 @@ class VehicleForm(forms.Form):
     model = forms.CharField()
     year = forms.IntegerField()
 
-
+# this is a test
 
 class VehicleView(FormView):
     form_class = VehicleForm
