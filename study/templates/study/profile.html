@@ -1,0 +1,26 @@
+{% extends "study/layout.html" %}
+{% block content %}
+<h1>Profile</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Display Name</th>
+      <th scope="col">ID</th>
+      <th scope="col">Principle Name</th>
+      <th scope="col">job Title</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {% if  item %}
+        <tr>
+          <td>{{ item.displayName}}</td>
+          <td>{{ item.id }}</td>
+          <td>{{ item.userPrincipalName }}</td>
+          <td>{{ item.jobTitle}}</td>
+        </tr>
+    {% endif %}
+  </tbody>
+</table>
+<h1>Profile</h1>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "study/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<body>
+<h1>Here You are</h1>
+ <form action="" method="post">
+    {% csrf_token %}
+  {{form | crispy }}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+{% endblock %}
+
